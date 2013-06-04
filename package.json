@@ -16,10 +16,8 @@
 , "directories": { "lib": "./lib"
                  }
 , "main": "./lib/rpc_servicedisco.js"
-, "dependencies":
-  {
+, "devDependencies":
+  { "webinos-jsonrpc2" : "*",
+    "webinos-utilities" : "git://github.com/webinos/webinos-utilities.git"
   }
-, "bundleDependencies":
-  [
-  ]
 }
