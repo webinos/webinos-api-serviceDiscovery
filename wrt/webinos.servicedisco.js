@@ -62,6 +62,7 @@
     if (typeof ZoneNotificationModule !== 'undefined') typeMap['http://webinos.org/api/internal/zonenotification'] = ZoneNotificationModule;
 //    if (typeof DiscoveryModule !== 'undefined') typeMap['http://webinos.org/manager/discovery/bluetooth'] = DiscoveryModule;
     if (typeof oAuthModule !== 'undefined') typeMap['http://webinos.org/mwc/oauth'] = oAuthModule;
+    if (typeof PolicyManagementModule !== 'undefined') typeMap['http://webinos.org/core/policymanagement'] = PolicyManagementModule;
 
     if (isOnNode()) {
         var path = require('path');
