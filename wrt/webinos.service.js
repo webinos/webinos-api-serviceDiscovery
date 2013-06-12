@@ -37,7 +37,8 @@
     };
     WebinosService.prototype.bind = WebinosService.prototype.bindService;
 
-    WebinosService.prototype.unbind = function(){};
+    WebinosService.prototype.unbindService = function(){};
+    WebinosService.prototype.unbind = WebinosService.prototype.unbindService;
 
     exports.WebinosService = WebinosService;
 
