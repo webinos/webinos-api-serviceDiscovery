@@ -78,7 +78,9 @@
     /**
      * Interface DiscoveryInterface
      */
-    var ServiceDiscovery = function (rpcHandler) {
+    var ServiceDiscovery = function (obj, rpcHandler) {
+        WebinosService.call(this, obj);
+
         var _webinosReady = false;
         var callerCache = [];
 
@@ -93,7 +95,7 @@
             var that = this;
             var findOp;
             
-            var rpc = rpcHandler.createRPC('ServiceDiscovery', 'findServices',
+            var rpc = rpcHandler.createRPC(this, 'findServices',
                     [serviceType, options, filter]);
             
             var timer = setTimeout(function () {
@@ -220,6 +222,11 @@
         };
     }
 
-    webinos.discovery = new ServiceDiscovery (webinos.rpcHandler);
+    webinos.discovery = new ServiceDiscovery({
+            api: 'http://webinos.org/internal/api/ServiceDiscovery',
+            displayName: 'ServiceDiscovery',
+            description: 'Webinos ServiceDiscovery',
+            id: 'dfab7856f4ba55e3730c27c4e635a1d9'
+        }, webinos.rpcHandler);
     webinos.ServiceDiscovery = webinos.discovery; // for backward compat
 }());
