@@ -19,10 +19,8 @@
 (function(exports) {
 
     var WebinosService = function (obj) {
-        this.base = RPCWebinosService;
-        this.base(obj);
+        RPCWebinosService.call(this, obj);
     };
-    WebinosService.prototype = new RPCWebinosService;
 
     WebinosService.prototype.state = {};
     WebinosService.prototype.icon = '';
