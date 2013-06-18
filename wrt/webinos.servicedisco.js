@@ -65,7 +65,7 @@
         console.log("discovery: registered constructor for", serviceType);
         typeMap[serviceType] = Constructor;
     };
-    _webinos.registerServiceConstructor = registerServiceConstructor;
+    if (typeof _webinos !== 'undefined') _webinos.registerServiceConstructor = registerServiceConstructor;
 
     if (isOnNode()) {
         var path = require('path');
@@ -112,6 +112,7 @@
             if (typeof WebinosDeviceOrientation !== 'undefined') typeMapCompatible['http://webinos.org/api/deviceorientation'] = WebinosDeviceOrientation;
             if (typeof PaymentModule !== 'undefined') typeMapCompatible['http://webinos.org/api/payment'] = PaymentModule;
             if (typeof Sensor !== 'undefined') typeMapCompatible['http://webinos.org/api/sensors'] = Sensor;
+            if (typeof TestModule !== 'undefined') typeMap['http://webinos.org/api/test'] = TestModule;
             if (typeof TVManager !== 'undefined') typeMapCompatible['http://webinos.org/api/tv'] = TVManager;
             if (typeof Vehicle !== 'undefined') typeMapCompatible['http://webinos.org/api/vehicle'] = Vehicle;
             if (typeof WebinosGeolocation !== 'undefined') typeMapCompatible['http://webinos.org/api/w3c/geolocation'] = WebinosGeolocation;
