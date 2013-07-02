@@ -44,7 +44,7 @@
         'http://webinos.org/api/w3c/geolocation',
         'http://www.w3.org/ns/api-perms/geolocation',
         'http://www.w3.org/ns/api-perms/contacts',
-        'http://www.w3.org/ns/api-perms/media',
+        'http://webinos.org/api/media',
         'http://webinos.org/api/internal/zonenotification',
         'http://webinos.org/manager/discovery/bluetooth',
         'http://webinos.org/mwc/oauth',
@@ -119,7 +119,7 @@
             if (typeof WebinosGeolocation !== 'undefined') typeMapCompatible['http://webinos.org/api/w3c/geolocation'] = WebinosGeolocation;
             if (typeof WebinosGeolocation !== 'undefined') typeMapCompatible['http://www.w3.org/ns/api-perms/geolocation'] = WebinosGeolocation; // old feature URI for compatibility
             if (typeof Contacts !== 'undefined') typeMapCompatible['http://www.w3.org/ns/api-perms/contacts'] = Contacts;
-            if (typeof Media !== 'undefined') typeMapCompatible['http://www.w3.org/ns/api-perms/media'] = Media;
+            if (typeof Media !== 'undefined') typeMapCompatible['http://webinos.org/api/media'] = Media;
             if (typeof ZoneNotificationModule !== 'undefined') typeMapCompatible['http://webinos.org/api/internal/zonenotification'] = ZoneNotificationModule;
 //            if (typeof DiscoveryModule !== 'undefined') typeMapCompatible['http://webinos.org/manager/discovery/bluetooth'] = DiscoveryModule;
             if (typeof oAuthModule !== 'undefined') typeMapCompatible['http://webinos.org/mwc/oauth'] = oAuthModule;
