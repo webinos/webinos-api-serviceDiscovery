@@ -44,6 +44,7 @@
         'http://webinos.org/api/w3c/geolocation',
         'http://www.w3.org/ns/api-perms/geolocation',
         'http://www.w3.org/ns/api-perms/contacts',
+        'http://webinos.org/api/media',
         'http://webinos.org/api/internal/zonenotification',
         'http://webinos.org/manager/discovery/bluetooth',
         'http://webinos.org/mwc/oauth',
