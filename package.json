@@ -2,12 +2,12 @@
 , "publishConfig": { "tag": "alpha" }
 , "description": "Service Discovery API"
 , "keywords": [ "webinos", "servicedisco", "API"]
-, "version": "0.0.1"
+, "version": "0.8.0"
 , "homepage": "http://webinos.org/"
 , "author": "Andre Paul <andre.paul@fokus.fraunhofer.de>"
 , "repository":
   { "type": "git"
-  , "url": "http://dev.webinos.org/git/webinos-api-serviceDiscovery.git"
+  , "url": "https://github.com/webinos/webinos-api-serviceDiscovery.git"
   }
 , "bugs":
   { "email": "webinos-wp4-ml@fokus.fraunhofer.de"
